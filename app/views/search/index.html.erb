@@ -1,0 +1,13 @@
+ <%= stylesheet_link_tag "style.css" %>
+<h1>Search result</h1>
+<ul>
+  <% for m in @books %>
+    <li>
+      <%= m.title %>
+      <br>
+      <%= m.excerpt %>
+      <br>
+      <%= m.published_on.strftime("%B %d, %y")%>
+    </li>
+    <% end %>
+</ul>

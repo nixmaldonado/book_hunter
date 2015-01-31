@@ -1,0 +1,13 @@
+ <%= stylesheet_link_tag "style.css" %>
+<h1>Welcome to Book Hunter</h1>
+<br>
+<p>Search by title or excerpt</p>
+<br>
+<div class = "search">
+<%= form_tag "search", url:"/search" do %>
+  <%= text_field_tag "search[key]" %>
+  <%= submit_tag "search" %>
+<% end -%>
+</div>
+
+
